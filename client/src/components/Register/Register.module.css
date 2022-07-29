@@ -1,0 +1,78 @@
+@import "../../utils/variable.css";
+
+.container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Roboto Mono', monospace;
+    color: var(--orange);
+}
+
+.registerContainer {
+    width: 450px;
+    height: 550px;
+    margin-top: 30px;
+    padding: 0px 20px 20px 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--blue);
+}
+
+.formContainer {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputContainer input {
+    height: 30px;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    background-color: var(--gray);
+}
+
+.inputContainer label {
+    font-size: 20px;
+}
+
+.registerHeader {
+    font-size: 30px;
+}
+
+.registerForm {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.submitButton {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--orange);
+    color: var(--white);
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Roboto Mono', monospace;
+    cursor: pointer;
+}
+
+.toLogin {
+    padding-top: 15px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.toLogin:hover {
+    text-decoration: underline;
+}

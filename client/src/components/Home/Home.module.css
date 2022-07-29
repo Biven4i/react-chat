@@ -1,0 +1,30 @@
+@import "../../utils/variable.css";
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.register, .login {
+    min-width: 300px;
+    padding: 25px 0px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.register {
+    background-color: var(--blue);
+    color: var(--orange);
+}
+
+.login {
+    background-color: var(--orange);
+    color: var(--white);
+    margin-top: 15px;
+}

@@ -1,0 +1,10 @@
+@import "../../utils/variable.css";
+
+.container {
+    background-color: var(--blue);
+    color: var(--orange);
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 500;
+    font-size: 26px;
+    padding: 10px 5px;
+}

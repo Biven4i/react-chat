@@ -1,0 +1,15 @@
+@import "../../utils/variable.css";
+
+.container {
+    background-color: var(--blue);
+    color: var(--orange);
+    font-family: 'Roboto Mono', monospace;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+.messageInfo {
+    font-size: 12px;
+}

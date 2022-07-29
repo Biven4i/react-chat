@@ -1,0 +1,13 @@
+@import "../../utils/variable.css";
+
+.container {
+    min-width: 15%;
+    background-color: var(--blue);
+    font-family: 'Roboto Mono', monospace;
+    color: var(--white);
+    padding: 10px;
+}
+
+.userListHeader {
+    margin: 5px;
+}

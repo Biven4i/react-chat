@@ -1,0 +1,17 @@
+@import "../../utils/variable.css";
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.inputMessage {
+    padding: 15px 5px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    border-top: 1px solid var(--black);
+    border-radius: 0px;
+    background-color: var(--gray);
+}
