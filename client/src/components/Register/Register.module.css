@@ -69,10 +69,7 @@
 
 .toLogin {
     padding-top: 15px;
+    color: inherit;
     text-align: center;
     cursor: pointer;
-}
-
-.toLogin:hover {
-    text-decoration: underline;
 }

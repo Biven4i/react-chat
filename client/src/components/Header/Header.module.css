@@ -8,3 +8,8 @@
     font-size: 26px;
     padding: 10px 5px;
 }
+
+.headerLink {
+    color: inherit;
+    text-decoration: none;
+}

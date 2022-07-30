@@ -68,11 +68,7 @@
 
 .toRegister {
     padding-top: 15px;
+    color: inherit;
     text-align: center;
     cursor: pointer;
 }
-
-.toRegister:hover {
-    text-decoration: underline;
-}
-

@@ -15,7 +15,8 @@
     border-radius: 5px;
     font-family: 'Roboto Mono', monospace;
     font-size: 25px;
-    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
 }
 
 .register {
