@@ -1,0 +1,30 @@
+.errorBox {
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    background-color: var(--blue);
+    padding: 20px 15px;
+    border-radius: 10px;
+}
+
+.error-enter {
+    top: 100px;
+    left: -250px;
+}
+
+.error-enter-active {
+    top: 100px;
+    left: 50px;
+    transition: top 300ms, left 300ms;
+}
+
+.error-exit {
+    top: 100px;
+    left: 50px;
+}
+
+.error-exit-active {
+    top: 100px;
+    left: -250px;
+    transition: top 300ms, left 300ms;
+}

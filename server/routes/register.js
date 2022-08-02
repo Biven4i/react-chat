@@ -23,7 +23,7 @@ router.post('/', async (req, res) => {
             if (result.length != 0) {
                 connection.release();
                 console.log("------> User already exists");
-                res.sendStatus(409);
+                res.send("User already exists");
             }
             else {
                 await connection.query(insert_query, (err, result) => {

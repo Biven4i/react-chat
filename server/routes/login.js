@@ -21,7 +21,7 @@ router.post('/', (req, res) => {
 
             if (result.length == 0) {
                 console.log("--------> User does not exist");
-                res.sendStatus(404);
+                res.send("User does not exist");
             }
             else {
                 const dbPassword = result[0].password;
@@ -31,8 +31,8 @@ router.post('/', (req, res) => {
                     res.send(`${user} is logged in!`);
                 }
                 else {
-                    console.log("---------> Password Incorrect");
-                    res.send("Password incorrect!");
+                    console.log("---------> Invalid password");
+                    res.send("Invalid password");
                 }
             }
         });
