@@ -26,7 +26,7 @@ function Register() {
                 password,
             })
         };
-        
+        // REFACTOR THIS SHIT!!!!
         if (!name) {
             setError(true);
             setTextError('Fill in the username field');
@@ -53,8 +53,10 @@ function Register() {
                             setTextError(text);
                             setTimeout(() => setError(false), 2000);
                             break;
-                        default:
+                        case 'Created new user':
+                            localStorage.setItem('userName', name);
                             navigate('/chat');
+                            navigate(0);
                     }
                 });
         }

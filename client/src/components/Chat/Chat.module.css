@@ -3,12 +3,8 @@
 .container {
     background-color: var(--gray);
     display: flex;
-    height: 100%;
-}
-
-.messageBox {
-    display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    width: 85%;
+    height: 100vh;
+    overflow: hidden;
 }

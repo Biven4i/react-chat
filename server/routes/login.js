@@ -13,7 +13,8 @@ router.post('/', (req, res) => {
 
         const sqlSearch = "Select * from users where user = ?";
         const search_query = mysql.format(sqlSearch, [user]);
-
+        const sqlLoginUpdate = "UPDATE users SET isLoggedIn = 'true' WHERE user = ?;"
+        const setLogin_query = mysql.format(sqlLoginUpdate, [user]);
         await connection.query(search_query, async (err, result) => {
             connection.release();
 
@@ -28,7 +29,8 @@ router.post('/', (req, res) => {
 
                 if (password === dbPassword) {
                     console.log("---------> Login Successful");
-                    res.send(`${user} is logged in!`);
+                    res.send("Login Successful");
+                    connection.query(setLogin_query);
                 }
                 else {
                     console.log("---------> Invalid password");

@@ -25,6 +25,7 @@ function Login() {
                 password,
             })
         };
+        // REFACTOR THIS SHIT!!!!
         if (!name) {
             setError(true);
             setTextError('Fill in the username field');
@@ -48,8 +49,10 @@ function Login() {
                             setTextError(text);
                             setTimeout(() => setError(false), 2000);
                             break;
-                        default:
+                        case 'Login Successful':
+                            localStorage.setItem('userName', name);
                             navigate('/chat');
+                            navigate(0);
                             break;
                     }
                 });

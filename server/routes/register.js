@@ -33,7 +33,7 @@ router.post('/', async (req, res) => {
 
                     console.log("--------> Created new User");
                     console.log(result.insertId);
-                    res.sendStatus(201);
+                    res.send("Created new user");
                 });
             }
         });

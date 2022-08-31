@@ -1,16 +1,12 @@
 import styles from './Chat.module.css';
-import UsersList from '../UsersList/UsersList';
 import MessagesList from '../MessagesList/MessagesList';
 import InputMessage from '../InputMessage/InputMessage';
 
-function Chat() {
+function Chat({socket}) {
     return (
         <div className={styles.container}>
-            <UsersList />
-            <div className={styles.messageBox}>
-                <MessagesList />
-                <InputMessage />
-            </div>
+                <MessagesList socket={socket} />
+                <InputMessage socket={socket} />
         </div>
     );
 }
